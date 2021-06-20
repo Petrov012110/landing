@@ -1,12 +1,13 @@
 import ReactDOM from 'react-dom';
-import React from 'react';
+import { Turn as Hamburger } from 'hamburger-react'
 import './index.less';
-
+import { useState } from 'react';
 
 const logo = require('../../assets/images/12.png');
 
 const Header = () => {
 
+    const [isOpen, setOpen] = useState(false)
     return (
         <header className="header">
             <div className="container">
@@ -30,7 +31,16 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="burger-menu">
-                        <div className="burger"></div>
+                        <Hamburger 
+                            toggled={isOpen} 
+                            toggle={setOpen}
+                            onToggle={toggled => {
+                                if (toggled) {
+                                   
+                                } else {
+                                   // close a menu
+                                }
+                              }} />
                     </div>
                 </div>
             </div>
