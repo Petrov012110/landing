@@ -1,70 +1,76 @@
-.header{
-    // background-color: #fff;
-    position: fixed;
-    width: 100%;
-    background-color: #f6f8f9;
-    z-index: 100;
+.header {
+  // background-color: #fff;
+  position: fixed;
+  width: 100%;
+  background-color: #f6f8f9;
+  z-index: 100;
 }
-.header__inner{
-    display: flex;
-    justify-content: space-between;
-    height: 68px;
-    align-items: center;
-    // box-shadow: 0px 2px 4px rgba(34, 40, 53, 0.04);
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 68px;
+  align-items: center;
+  // box-shadow: 0px 2px 4px rgba(34, 40, 53, 0.04);
 }
-img{
-    width: 130px;
+img {
+  width: 130px;
 }
-.headr__nav{
-    display: flex;
+.headr__nav {
+  display: flex;
 }
-.menu{
-    margin-right: 52px;
-    display: flex;
-    align-items: center;
-    a{
-        transition: all 0.3s;
-        &:hover{
-            color: #2E62D9;
-        }
-    }
-}
-.header__btn:first-child{
-    margin-right: 32px;
+.menu {
+  margin-right: 52px;
+  display: flex;
+  align-items: center;
+  a {
     transition: all 0.3s;
-    &:hover{
-        color: #2E62D9;
+    &:hover {
+      color: #2e62d9;
     }
+  }
 }
-.header__btn-registration{
-    padding: 8px 18px;
-    border: 2px solid #C0E3FF;
-    background-color: #f6f8f9;
-    border-radius: 4px;
-    color: #2E62D9;
-    transition: all 0.3s;
-    &:hover{
-        color: #fff;
-        background-color: rgba(46,98,217,1);
-    }
+.header__btn:first-child {
+  margin-right: 32px;
+  transition: all 0.3s;
+  &:hover {
+    color: #2e62d9;
+  }
+}
+.header__btn-registration {
+  padding: 8px 18px;
+  border: 2px solid #c0e3ff;
+  background-color: #f6f8f9;
+  border-radius: 4px;
+  color: #2e62d9;
+  transition: all 0.3s;
+  &:hover {
+    color: #fff;
+    background-color: rgba(46, 98, 217, 1);
+  }
 }
 .logo-header {
-    // width: 163.312px;
-    height: 100%;
+  // width: 163.312px;
+  height: 100%;
 }
-.burger-menu{
-    display: none;
-    cursor: pointer;
+.burger-menu {
+  display: none;
+  cursor: pointer;
 }
-.burger{
-    &::after{
-        position: relative;
-        content: "\e9bd";
-        color: #16151A;
-        font-family: 'icomoon';
-        font-size: 33px;
-    }
-    
+.burger {
+  &::after {
+    position: relative;
+    content: "\e9bd";
+    color: #16151a;
+    font-family: "icomoon";
+    font-size: 33px;
+  }
 }
 
-@import 'media';
+.my-menu-button {
+  height: fit-content;
+  width: fit-content;
+  padding: unset;
+  color: #000;
+}
+
+@import "media";
