@@ -1,9 +1,9 @@
 import './index.less';
-import Introduction from '../../components/Introduction';
-import { Advantages } from '../../components/Advantages';
-import { Steps } from '../../components/Steps';
-import { SliderSection } from '../../components/Abilities';
-import { Description } from '../../components/Description';
+import Introduction from '../../components/main-page/Introduction';
+import { Advantages } from '../../components/main-page/Advantages';
+import { Steps } from '../../components/main-page/Steps';
+import { SliderSection } from '../../components/main-page/Abilities';
+import { Description } from '../../components/main-page/Description';
 
 export type LandingProps = {};
 
