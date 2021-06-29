@@ -15,7 +15,7 @@ const Header = () => {
                 <div className="header__inner">
                     <div className="header__logo">
                         <a href="#">
-                            <img className="logo-header" src={logo?.default} alt="logo" />
+                            {/* <img className="logo-header" src={logo?.default} alt="logo" /> */}
                         </a>
                     </div>
                     <div className="menu-web">

@@ -1,6 +1,6 @@
 import './index.less'
-const phone = require('../../assets/images/phone.png');
-const phoneSmall = require('../../assets/images/phoneS.png');
+const phone = require('../../../assets/images/phone.png');
+const phoneSmall = require('../../../assets/images/phoneS.png');
 export const Steps = () => {
     return (
         <div className="steps">

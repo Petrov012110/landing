@@ -1,4 +1,5 @@
 import './index.less'
+import { ImVk, ImTelegram } from "react-icons/im";
 const logo = require('../../assets/images/11.png');
 
 export const Fooret = () => {
@@ -8,7 +9,7 @@ export const Fooret = () => {
                 <div className="footer__inner">
                     <div className="footer__logo">
                         <a href="#">
-                            <img className="logo-footer" src={logo?.default} alt="logo" />
+                            {/* <img className="logo-footer" src={logo?.default} alt="logo" /> */}
                         </a>
                     </div>
                     <div className="footer__adress">
@@ -35,10 +36,10 @@ export const Fooret = () => {
                         </div>
                         <div className="footer__social-networks">
                             <div className="vk">
-                                <a href="#"><span></span></a>
+                                <a href="#"><span><ImVk className="vk"/></span></a>
                             </div>
                             <div className="tg">
-                                <a href="#"><span></span></a>
+                                <a href="#"><span><ImTelegram className="tg"/></span></a>
                             </div>
                         </div>
                     </div>
