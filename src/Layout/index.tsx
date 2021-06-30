@@ -1,11 +1,11 @@
 import React from 'react';
-import { Fooret } from '../../components/Footer';
-import Header from '../../components/Header';
-import Landing, { LandingProps, MY_CONST } from '../../containers/Landing';
-import Parser from '../../containers/Parser';
+import { Fooret } from '../components/Footer';
+import Header from '../components/Header';
+import Landing, { LandingProps, MY_CONST } from '../containers/Landing';
+import Parser from '../containers/Parser';
 import './index.less';
 
-export function Layout() {
+export const Layout: React.FC = ({children}) => {
 
     return (
         <section className="layout">
@@ -14,8 +14,7 @@ export function Layout() {
                 <Header />
             </section>
             <section className="content">
-                <Landing />
-                {/* <Parser/> */}
+                {children}
             </section>
             <section className="footer">
                 <Fooret />
