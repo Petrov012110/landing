@@ -22,31 +22,38 @@ img {
   margin-right: 52px;
   display: flex;
   align-items: center;
-  a {
-    transition: all 0.3s;
-    &:hover {
-      color: #2e62d9;
-    }
-  }
+
 }
-.header__btn:first-child {
-  margin-right: 32px;
+// a {
+//   transition: all 0.3s;
+//   &:hover {
+//     color: #2e62d9;
+//   }
+// }
+.header__btn{
   transition: all 0.3s;
   &:hover {
     color: #2e62d9;
   }
 }
-.header__btn-registration {
+.header__btn:first-child {
+  transition: all 0.3s;
+  &:hover {
+    color: #2e62d9;
+  }
+}
+ul > li.header__btn-registration {
   padding: 8px 18px;
   border: 2px solid #c0e3ff;
   background-color: #f6f8f9;
   border-radius: 4px;
-  color: #2e62d9;
   transition: all 0.3s;
-  &:hover {
-    color: #fff;
-    background-color: rgba(46, 98, 217, 1);
+  &:hover{
+    background-color: #e1ecf4!important;
   }
+}
+.ant-menu-horizontal > .ant-menu-item::after, .ant-menu-horizontal > .ant-menu-submenu::after {
+display: none;
 }
 .logo-header {
   // width: 163.312px;
