@@ -1,8 +1,6 @@
 import React from 'react';
 import { Fooret } from '../components/Footer';
 import Header from '../components/Header';
-import Landing, { LandingProps, MY_CONST } from '../containers/Landing';
-import Parser from '../containers/Parser';
 import './index.less';
 
 export const Layout: React.FC = ({children}) => {
