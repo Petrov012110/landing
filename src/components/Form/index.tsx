@@ -1,10 +1,11 @@
+import { CloseOutlined } from '@ant-design/icons';
 import React from 'react';
 import { useForm } from "react-hook-form";
 import './index.less';
 
 type FormData = {
-    firstName: string;
-    lastName: string;
+    login: string;
+    password: string;
 };
 
 
@@ -16,21 +17,41 @@ export const MultipleInputs = () => {
     // firstName and lastName will have correct type
 
     return (
-        <div className="form-registration">
+        <div className="login-form">
             <form onSubmit={onSubmit}>
-                <label>First Name</label>
-                <input {...register("firstName")} />
-                <label>Last Name</label>
-                <input {...register("lastName")} />
                 <button
+                    className="btn-out"
                     type="button"
                     onClick={() => {
-                        setValue("lastName", "luo"); // ✅
-                        // errors.bill; // ❌: property bill does not exist
+
+                    }}
+                >
+                    <CloseOutlined />
+                </button>
+                <div className="login-form__title">Вход</div>
+                <label>Логин</label>
+                <input {...register("login")} />
+                <label>Пароль</label>
+                <input placeholder="Введите пароль" {...register("password")} />
+                <button
+                    className="btn"
+                    type="button"
+                    onClick={() => {
+
                     }}
                 >
                     Войти
                 </button>
+                <div className="login-form__recovery">
+                    <a href="#">
+                        Забыли логин или пароль?
+                    </a>
+                </div>
+                <div className="login-form__recovery">
+                    <a href="#">
+                        Регистрация
+                    </a>
+                </div>
             </form>
         </div>
     );
