@@ -19,7 +19,6 @@ const Landing = () => {
             <Steps />
             <SliderSection />
             <Description />
-            <MultipleInputs />
         </div>
     )
 
