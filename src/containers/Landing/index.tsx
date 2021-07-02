@@ -4,7 +4,7 @@ import { Advantages } from '../../components/main-page/Advantages';
 import { Steps } from '../../components/main-page/Steps';
 import { SliderSection } from '../../components/main-page/Abilities';
 import { Description } from '../../components/main-page/Description';
-import { MultipleInputs } from '../../components/Form';
+
 
 export type LandingProps = {};
 
