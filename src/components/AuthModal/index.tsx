@@ -1,5 +1,5 @@
 import { Modal } from 'antd';
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { SignInForm } from '../SignInForm';
 
 export type FormType = 'signIn' | 'signUp' | 'forgot'
@@ -13,6 +13,7 @@ const Form: React.FC<{
   activeForm: FormType;
   onChangeActiveForm?: (form: FormType) => void;
 }>= ({activeForm, onChangeActiveForm}) => {
+
   if (activeForm === 'signIn') {
     return (
       <SignInForm

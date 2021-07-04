@@ -43,19 +43,9 @@ export const SignInForm: React.FC<SignInFormProps> = ({ onForgotClick, onRegiste
                     placeholder="Password"
                 />
             </Form.Item>
-            <Form.Item >
-                <div className="forgot-pass">
-                    <Form.Item name="remember" valuePropName="checked" noStyle>
-                        <Checkbox>Remember me</Checkbox>
-                    </Form.Item>
 
-                    <Button className="login-form-forgot" type="link" onClick={() => onForgotClick?.()}>
-                        Forgot password
-                    </Button>
-                </div>
-            </Form.Item>
 
-            <Form.Item>
+            <Form.Item style={{ marginBottom: "10px"}}>
                 <Button type="primary" htmlType="submit" className="login-form-button">
                     Log in
                 </Button>
@@ -63,6 +53,13 @@ export const SignInForm: React.FC<SignInFormProps> = ({ onForgotClick, onRegiste
                 <Button type="link" onClick={() => onRegisterClick?.()}>
                     register now!
                 </Button>
+            </Form.Item>
+            <Form.Item >
+                <div className="forgot-pass">
+                    <Button className="login-form-forgot" type="link" onClick={() => onForgotClick?.()}>
+                        Forgot password
+                    </Button>
+                </div>
             </Form.Item>
         </Form>
     );

@@ -10,6 +10,9 @@ export const Menu: React.FC<MenuProps> = ({ ...props }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const showModal = () => {
     setIsModalVisible(true);
+    // console.log(document.body.style.overflow);
+      document.body.style.overflow = "auto";
+    
   };
 
   const handleOk = () => {
@@ -29,9 +32,6 @@ export const Menu: React.FC<MenuProps> = ({ ...props }) => {
         <AntMenu.Item className="header__btn" onClick={showModal}>
           <a href="#">Войти</a>
         </AntMenu.Item>
-        {/* <AntMenu.Item className="header__btn-registration">
-        <a href="">Регистрация</a>
-      </AntMenu.Item> */}
       </AntMenu>
       <AuthModal visible={isModalVisible} onChangeVisible={setIsModalVisible} />
     </>

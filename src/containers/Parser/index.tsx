@@ -3,7 +3,7 @@ import './index.less';
 
 import { Groups } from '../../components/parser-page/groups';
 import { Brends } from '../../components/parser-page/brends';
-// import { PostsTable } from '../../components/parser-page/table/index';
+import { Table } from '../../components/parser-page/table';
 
 
 export type LandingProps = {};
@@ -15,7 +15,7 @@ const Parser = () => {
         <div className="parser-page">
             <Groups />
             <Brends />
-            {/* <PostsTable/> */}
+            <Table />
         </div>
     )
 };

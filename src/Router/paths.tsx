@@ -3,6 +3,7 @@ import { RouteProps } from 'react-router-dom';
 import { Spin } from 'antd';
 import { Layout } from '../Layout';
 
+const Item = React.lazy(() => import('../containers/Item'));
 const HomePage = React.lazy(() => import('../containers/Landing'));
 const SearchPage = React.lazy(() => import('../containers/Parser'));
 const Page404 = React.lazy(() => import('../containers/Page404'));
@@ -33,6 +34,15 @@ export const paths: PageType[] = [
     component: () => (
       <Page>
         <SearchPage />
+      </Page>
+    ),
+  },
+  {
+    exact: true,
+    path: '/item',
+    component: () => (
+      <Page>
+        <Item />
       </Page>
     ),
   },
