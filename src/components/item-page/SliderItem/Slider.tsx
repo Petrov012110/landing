@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-const img1 = require("../../../assets/images/img1.jpg");
-const img2 = require("../../../assets/images/img2.jpg");
-const img3 = require("../../../assets/images/img3.jpg");
-const img4 = require("../../../assets/images/img4.jpg");
 
-export const SliderSlick = () =>  {
-  
+
+export default class CenterMode extends Component {
+  render() {
     const settings = {
-      customPaging: function(i: number) {
+      customPaging: function(i) {
         return (
           <a>
-            <img src={`img${i + 1}`} />
+            <img src={`${baseUrl}/abstract0${i + 1}.jpg`} />
           </a>
         );
       },
@@ -27,19 +24,19 @@ export const SliderSlick = () =>  {
         <h2>Custom Paging</h2>
         <Slider {...settings}>
           <div>
-            <img src={img1} />
+            <img src={baseUrl + "/abstract01.jpg"} />
           </div>
           <div>
-            <img src={img2} />
+            <img src={baseUrl + "/abstract02.jpg"} />
           </div>
           <div>
-            <img src={img3} />
+            <img src={baseUrl + "/abstract03.jpg"} />
           </div>
           <div>
-            <img src={img4} />
+            <img src={baseUrl + "/abstract04.jpg"} />
           </div>
         </Slider>
       </div>
     );
-  
+  }
 }

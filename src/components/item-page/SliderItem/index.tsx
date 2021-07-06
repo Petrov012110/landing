@@ -1,12 +1,13 @@
 
 import './index.less';
-import { SliderSlick } from './Slider';
+import Carousel from "./Slider";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const SliderItem = () => {
     return (
-        <div className="slider">
-            <SliderSlick/>
-        </div>
+        <div>
+        <Carousel />
+      </div>
     )
 };
 
