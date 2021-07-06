@@ -1,7 +1,39 @@
 .slider{
     padding-top: 100px;
 }
+.slick-slider{
+    button{
+        position: absolute;
+        top: 40%;
+    }
+    .slick-prev{
+        right: 0;
+        z-index: 5;
+    }
+}
+.slick-dots {
+    position: relative !important; 
+    top: 10px;
+    li{
+        width: auto !important;
+        height: auto !important;
+    }
+}
+.slick-prev:before, .slick-next:before {
+
+    font-size: 30px;
+    line-height: 2;
+    color: #000 !important;
+}
 .slick-dots{
     display: flex !important;
     justify-content: center !important;
+}
+.carousel-img{
+    width: auto;
+    max-height: 500px;
+}
+.container-img{
+    display: flex !important;
+    justify-content: center;
 }
