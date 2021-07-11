@@ -20,7 +20,6 @@ export const Sli = () => {
     };
     return (
       <div>
-        <h2>Custom Paging</h2>
         <Slider {...settings}>
           <div className="container-img">
             <img className="carousel-img" src={'https://sun9-12.userapi.com/impg/o9GNlo2sWCaKv8FkL4a-7TL2SU9qnBWUy_aExA/8EPPlPYwWos.jpg?size=1080x720&quality=96&sign=8d55ca716e61c3279a789c957170e6b8&type=album'} />
