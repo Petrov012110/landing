@@ -29,6 +29,9 @@ export const Menu: React.FC<MenuProps> = ({ ...props }) => {
         <AntMenu.Item className="header__btn">
           <a href="/parser">Поиск</a>
         </AntMenu.Item>
+        <AntMenu.Item className="header__btn">
+          <a href="/favorites">Избранное</a>
+        </AntMenu.Item>
         <AntMenu.Item className="header__btn" onClick={showModal}>
           <a href="#">Войти</a>
         </AntMenu.Item>

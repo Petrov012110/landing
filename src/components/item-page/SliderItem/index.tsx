@@ -1,13 +1,14 @@
 
 import './index.less';
-import {Sli} from "./Slider";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AsNavFor from './Slider';
 
 const SliderItem = () => {
     return (
         <div>
-        <Sli />
+        <AsNavFor />
       </div>
     )
 };

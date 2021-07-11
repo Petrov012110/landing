@@ -1,6 +1,7 @@
 import { Modal } from 'antd';
 import React, { useState, useMemo, useEffect } from 'react';
 import { SignInForm } from '../SignInForm';
+import { RegistrationForm } from '../SignUpForm';
 
 export type FormType = 'signIn' | 'signUp' | 'forgot'
 
@@ -22,7 +23,9 @@ const Form: React.FC<{
       />
     );
   } else if (activeForm === 'signUp') {
-    return null;
+    return (
+      <RegistrationForm />
+    )
   } else if (activeForm === 'forgot') {
     return null;
   } else return null;

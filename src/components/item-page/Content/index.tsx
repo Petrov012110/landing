@@ -1,18 +1,19 @@
 import { StarOutlined } from '@ant-design/icons';
 import { Divider } from 'antd';
+import Favorite from './addFavorite';
 import './index.less';
 
 
 const Content = () => {
     return (
         <div>
-            <div className="content">
+            <div className="content-tem">
                 <div className="conteiner">
-                    <div className="content__inner">
+                    <div className="content-tem__inner">
                         <div className="title">
                             <div className="title__inner">
                                 <div>Yeezy 500</div>
-                                <button>L</button>
+                                <Favorite />
                             </div>
                             <Divider>Content</Divider>
                         </div>
