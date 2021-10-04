@@ -1,35 +1,100 @@
-
-.footer__inner{
-    display: flex;
-    justify-content: space-between;
+.footer{
     padding-top: 50px;
-    padding-bottom: 40px;
-}
-.text{
     margin-bottom: 15px;
 }
-.footer__btn{
-    display: flex;
-    .btn:first-child{
-        margin-right: 50px;
+.footer__inner {
+    background: #181A27;
+    border-radius: 20px;
+    padding: 60px 107px;
+    .logo>a{
+        align-items: center;
+        display: flex;
+        img{
+            margin-right: 10px;
+        }
     }
 }
-.mail{
-    margin-bottom: 10px;
+
+.footer__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 115%;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    text-align: start;
+    margin-bottom: 60px;
 }
-.footer__social-networks{
+
+.contacts {
     display: flex;
-    a{
-        position: relative;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.contact-row {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
     }
-    a:first-child{
-        margin-right: 15px;
+}
+
+.contact-link {
+    text-align: start;
+
+    div {
+        margin-top: 13px;
     }
-    .vk,
-    .tg{
-        font-size: 26px
+}
+
+.footer__info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+}
+
+.contact-row>a {
+    display: flex;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+    }
+
+    span {
+        margin-left: 6px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: -0.015em;
+        color: #6E737E;
+    }
+}
+
+.logotype-footer {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: #F6F8F9;
+}
+
+.contact-column{
+    margin-right: 10px;
+    margin-bottom: 15px;
+    &:last-child{
+        margin-right: 0;
+        margin-bottom: 0px;
+
     }
 }
 
 @import 'media';
-

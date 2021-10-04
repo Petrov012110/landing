@@ -1,38 +1,102 @@
-.slider__content{
-    margin: 0 auto;
-}
-.slider__title{
-    text-align: center;
+.abilities{
     margin-bottom: 90px;
-    p{
+    padding-top: 50px;
+}
+.abilities__header {
+    margin-bottom: 54px;
+
+    &-title {
+        font-style: normal;
         font-weight: bold;
-        font-size: 36px;
-        line-height: 46px;
         text-align: center;
-        color: #16151A;
+        font-size: 48px;
+        letter-spacing: -0.01em;
+        color: #181A27;
+        margin-bottom: 15px;
+        line-height: 115%;
+
     }
+
+    &-subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: #6E737E;
+        line-height: 150%;
+
+    }
+
 }
-.slider{
-    margin-bottom: 140px;
-    padding-top: 15px
-}
-.slide{
-    display: block !important;
-    background-color: #f6f8f9;
-    padding: 72px;
-    max-width: 960px;
-    width: 100%;
-    min-height: 573px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.slider__text{
-    p{
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 38px;
-        color: #222835;
+
+.abilities__content {
+    display: flex;
+    justify-content: center;
+
+    .block {
+        overflow: hidden;
+        position: relative;
+        max-width: 445px;
+        width: 100%;
+        background-color: #F6F8F9;
+        border-radius: 20px;
+        margin-right: 11px;
+        margin-left: 11px;
+        margin-bottom: 22px;
+
+        &__title {
+            text-align: left;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            letter-spacing: -0.015em;
+            color: #181A27;
+            margin-bottom: 12px;
+            line-height: 120%;
+        }
+
+        &__subtitle {
+            text-align: left;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: -0.015em;
+            color: #6E737E;
+            padding-right: 50px;
+
+        }
+        .phone__img,
+        .themarket__img,
+        .groups__img,
+        .checkboxes__img{
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .checkboxes__img{
+            left: 0;
+        }
+        .phoneSmall__img,
+        .themarketSmall__img,
+        .groupsSmall__img,
+        .checkboxesSmall__img{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .checkboxesSmall__img{
+            left: -17px;
+        }
+    }
+    .normal{
+        padding: 40px 36px 271px 36px;
+    }
+
+    .small{
+        padding: 40px 36px 215px 36px;
     }
 }
 

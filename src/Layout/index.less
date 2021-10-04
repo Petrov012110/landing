@@ -12,6 +12,7 @@
 }
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -35,7 +36,8 @@ li{
     list-style: none;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #546e7a;
     line-height: 24px;
@@ -51,9 +53,12 @@ body{
     overflow-x: hidden;
 }
 .content{
-    min-height: calc(100vh - 158px);
-    padding-top: 45px;
+    // min-height: calc(100vh - 158px);
     .ant-result {
         padding: 120px 32px;
     }
+}
+button{
+    cursor: pointer;
+    border: none;
 }

@@ -1,24 +1,18 @@
-@media (max-width: 600px) {
-  .menu-web{
-      display: none;
-  }
-  ul > li.header__btn-registration {
-    border: none;
-    background-color: #f6f8f9;
-    &:hover{
-      background-color: #f6f8f9 !important;
+@media (max-width: 1050px) {
+    .navigation {
+        display: none;
     }
-  }
-  .burger-menu {
-    display: block;
-  }
-  .logo-header {
-    height: 100%;
-  }
-  img {
-    width: 115px;
-  }
-  .header__inner {
-    height: 60px;
-  }
+}
+
+@media (max-width: 500px) {
+    .header__inner {
+        .logo {
+            margin-right: 10px;
+        }
+    }
+
+    /*скрываем стандартное меню и показываем бургер*/
+    .header__inner>.bside {
+        display: none;
+    }
 }

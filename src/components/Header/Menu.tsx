@@ -1,43 +1,21 @@
+import { MenuFoldOutlined } from "@ant-design/icons";
 import React, { useState } from "react";
-import { Menu as AntMenu, MenuProps as AntMenuProps, Modal } from "antd";
-import "antd/dist/antd.css";
-import { SignInForm } from "../SignInForm";
-import { AuthModal } from "../AuthModal";
+import { slide as Menu } from 'react-burger-menu'
 
-export type MenuProps = Pick<AntMenuProps, "mode" | "className">;
 
-export const Menu: React.FC<MenuProps> = ({ ...props }) => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const showModal = () => {
-    setIsModalVisible(true);
-    // console.log(document.body.style.overflow);
-      document.body.style.overflow = "auto";
-    
-  };
 
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
+export const MenuBurger = () => {
 
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
+  const showSettings = (event: any) => {
+    event.preventDefault();
+  }
 
   return (
-    <>
-      <AntMenu className="go-menu" {...props} activeKey={undefined}>
-        <AntMenu.Item className="header__btn">
-          <a href="/parser">Поиск</a>
-        </AntMenu.Item>
-        <AntMenu.Item className="header__btn">
-          <a href="/favorites">Избранное</a>
-        </AntMenu.Item>
-        <AntMenu.Item className="header__btn" onClick={showModal}>
-          <a href="#">Войти</a>
-        </AntMenu.Item>
-      </AntMenu>
-      <AuthModal visible={isModalVisible} onChangeVisible={setIsModalVisible} />
-    </>
-
+    <Menu id={ "sidebar" } customBurgerIcon={ <MenuFoldOutlined /> }>
+      <a id="home" className="menu-item" href="/">Home</a>
+      <a id="about" className="menu-item" href="/about">About</a>
+      <a id="contact" className="menu-item" href="/contact">Contact</a>
+      <a onClick={showSettings} className="menu-item--small" href="">Settings</a>
+    </Menu>
   );
 };

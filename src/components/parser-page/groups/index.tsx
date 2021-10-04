@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import './index.less';
 import { Group } from "./Group";
 import { Collapse } from 'antd';
