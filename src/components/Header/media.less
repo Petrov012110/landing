@@ -1,4 +1,4 @@
-@media (max-width: 1050px) {
+@media (max-width: 1095px) {
     .navigation {
         display: none;
     }
@@ -13,6 +13,17 @@
 
     /*скрываем стандартное меню и показываем бургер*/
     .header__inner>.bside {
-        display: none;
+        .burger {
+            display: block;
+        }
+
+        .search__btn,
+        .registration__btn {
+            display: none;
+
+        }
+    }
+    .header__inner {
+        flex-direction: row-reverse;
     }
 }

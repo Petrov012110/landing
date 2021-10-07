@@ -11,6 +11,9 @@ export const MenuBurger = () => {
 
   return (
     <Menu
+      right
+      // noOverlay
+      // disableOverlayClick
       id={"sidebar"}
       isOpen={isMenuOpen}
       customBurgerIcon={<Hamburger toggled={isMenuOpen} />}

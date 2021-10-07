@@ -1,11 +1,26 @@
 
-
+.header{
+  .container{
+    position: relative;
+  }
+}
+#sidebar{
+  background-color: #fff;
+  top: 0;
+}
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-
+  // .bside{
+  //   position: relative;
+  // }
+  .bm-overlay{
+    left: 0;
+    top: 0px;
+    z-index: 1;
+  }
   .aside,
   .bside {
     display: flex;
@@ -44,7 +59,10 @@
       }
     }
   }
-
+  .burger{
+    display: none;
+    z-index: 5 !important;
+  }
   .search__btn,
   .registration__btn {
     button {
