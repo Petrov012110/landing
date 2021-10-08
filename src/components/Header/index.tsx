@@ -57,25 +57,6 @@ const Header = () => {
               <button>Регистрация</button>
             </div>
           </div>
-          {/* <div className="header__inner-bside">
-                        <div className="menu-web">
-                            <Menu className="web" mode="horizontal" />
-                        </div>
-                        <div className="burger-menu">
-                            <Dropdown
-                                className="my-menu-button"
-                                overlay={() => <Menu mode="vertical" />}
-                                visible={menuOpen}
-                                placement="bottomRight"
-                                trigger={["click"]}
-                                onVisibleChange={(visible) => setMenuOpen(visible)}
-                            >
-                                <Button type="link">
-                                    <Sling toggled={menuOpen} />
-                                </Button>
-                            </Dropdown>
-                        </div>
-                    </div> */}
         </div>
       </div>
     </header>

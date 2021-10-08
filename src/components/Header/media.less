@@ -2,14 +2,12 @@
     .navigation {
         display: none;
     }
+
 }
 
 @media (max-width: 500px) {
-    .header__inner {
-        .logo {
-            margin-right: 10px;
-        }
-    }
+
+
 
     /*скрываем стандартное меню и показываем бургер*/
     .header__inner>.bside {
@@ -23,7 +21,55 @@
 
         }
     }
+
     .header__inner {
-        flex-direction: row-reverse;
+        .bside {
+            .logo {
+                margin-right: 10px;
+            }
+
+            .navigation-burger {
+                padding: 30px 20px 20px 24px;
+
+                .logo {
+                    margin-bottom: 80px;
+                }
+
+                .navigation {
+                    display: block;
+
+                    ul {
+                        display: block;
+
+                        li {
+                            text-align: start;
+                            margin-bottom: 20px;
+
+                            a {
+                                color: #6E737E;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .buttons-burger {
+                padding: 30px 20px 20px 24px;
+                .search__btn{
+                    margin-bottom: 15px;
+                }
+                
+                .search__btn,
+                .registration__btn {
+                    margin-right: 0;
+                    display: block;
+
+                    button {
+                        padding: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

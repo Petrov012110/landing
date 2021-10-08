@@ -1,7 +1,7 @@
 import './index.less';
 import Introduction from '../../components/main-page/Introduction';
 import { Advantages } from '../../components/main-page/Advantages';
-import { Slider } from '../../components/main-page/Slider';
+import { Slider } from '../../components/main-page/SliderCarousel';
 import { AbilitiesSection } from '../../components/main-page/Abilities';
 import { Description } from '../../components/main-page/Description';
 
